@@ -1,8 +1,13 @@
 # YouTube Clone
-
-![Project Screenshot](screenshot.png)
+![Project Screenshot (1)](https://github.com/Mohit1310/my-YouTube/assets/70746260/5471b464-35fa-4d86-b7ab-9e7df59849b5)
 
 A YouTube clone built using React, Redux, and Vite that utilizes the YouTube API to fetch videos for the homepage, complete with titles and descriptions. This project also includes a search bar that provides search suggestions (though the search functionality is currently static and non-functional). When viewing a video, users can see nested comments, and live comments are also supported without causing page freezes by automatically deleting older comments after a certain threshold is reached.
+
+### Search with Debouncing
+
+Our YouTube clone features an intelligent search bar with a debouncing mechanism. This means that as you type your search query, the application won't make immediate requests to the YouTube API for every keystroke, which can be resource-intensive and cause unnecessary load. Instead, it waits for a brief pause in your typing, and then it sends the search query to fetch results. This enhances user experience by reducing unnecessary API requests and providing more relevant search results.
+
+To use the search bar effectively, simply start typing your search query, and the suggestions will update dynamically. When you're ready to search, hit the Enter key, and the clone will fetch and display the results for your query.
 
 ## Table of Contents
 
