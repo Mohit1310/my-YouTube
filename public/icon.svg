@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="60" viewBox="0 0 100 60">
+  <!-- Red background -->
+  <rect width="100" height="60" rx="10" ry="10" fill="#FF0000" />
+  
+  <!-- Play button triangle -->
+  <polygon points="30,15 30,45 70,30" fill="#FFFFFF" />
+  
+  <!-- Lines to make it unique -->
+  <line x1="30" y1="20" x2="30" y2="40" stroke="#FF0000" stroke-width="3" />
+  <line x1="35" y1="20" x2="35" y2="40" stroke="#FF0000" stroke-width="3" />
+  <line x1="40" y1="20" x2="40" y2="40" stroke="#FF0000" stroke-width="3" />
+</svg>
