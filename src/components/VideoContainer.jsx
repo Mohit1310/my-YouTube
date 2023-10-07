@@ -25,8 +25,8 @@ const VideoContainer = () => {
   };
 
   const class1 = isMenuOpen
-    ? "flex flex-wrap gap-5 ml-[164px] absolute mt-12 -z-10 p-2"
-    : "flex flex-wrap gap-5 ml-4 absolute mt-12 -z-10 p-2";
+    ? "flex flex-wrap gap-4 ml-[164px] absolute mt-12 -z-20 p-2"
+    : "flex flex-wrap gap-4 absolute mt-12 -z-20 p-2 pl-7";
 
   const class2 = isDarkMode ? "bg-[#0f0f0f] text-white" : "";
 

@@ -81,6 +81,10 @@ const Head = () => {
     dispatch(toggleIsDarkMode());
   };
 
+  const handleSuggestionClick = (suggestion) => {
+    setSearchQuery(suggestion);
+  };
+
   return (
     <div
       className={
@@ -143,7 +147,12 @@ const Head = () => {
                 {suggestions.map((s) => (
                   <li
                     key={s}
-                    className="flex gap-2 py-1 px-5 hover:bg-gray-200 cursor-pointer"
+                    className={
+                      isDarkMode
+                        ? "flex gap-2 py-1 px-5 hover:bg-stone-700 cursor-pointer"
+                        : "flex gap-2 py-1 px-5 hover:bg-gray-200 cursor-pointer"
+                    }
+                    onClick={() => handleSuggestionClick(s)}
                   >
                     <GoSearch className="text-xl" /> {s}
                   </li>

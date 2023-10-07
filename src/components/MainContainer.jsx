@@ -9,15 +9,15 @@ const MainContainer = () => {
   const isDarkMode = useSelector((store) => store.app.isDarkMode);
 
   const class1 = isMenuOpen
-    ? "flex ml-40 fixed w-screen"
-    : "flex ml-4 fixed w-screen";
+    ? "flex ml-40 fixed w-screen -z-10"
+    : "flex fixed pl-4 w-screen -z-10";
 
   const class2 = isDarkMode ? "bg-[#0f0f0f]" : "bg-white";
 
   const combinedClass = `${class1} ${class2}`;
 
   return (
-    <div className="mt-20 ml-3">
+    <div className="mt-20 ml-2">
       <div
         className={combinedClass}
       >
