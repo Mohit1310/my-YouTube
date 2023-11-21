@@ -140,7 +140,7 @@ const Head = () => {
               <ul
                 className={
                   isDarkMode
-                    ? "fixed bg-[#0f0f0f] py-3  w-[29rem] rounded-lg shadow-lg"
+                    ? "fixed bg-[#212121] py-3  w-[29rem] rounded-lg shadow-lg"
                     : "fixed bg-white py-3  w-[29rem] border border-gray-100 rounded-lg shadow-lg"
                 }
               >
